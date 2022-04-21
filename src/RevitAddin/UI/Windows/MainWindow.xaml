@@ -1,0 +1,25 @@
+﻿<Window
+    x:Class="RevitAddin.UI.Windows.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
+    xmlns:markup="clr-namespace:RevitAddin.Core.Markup;assembly=RevitAddin.Core"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    x:Name="mainWindow"
+    Width="500"
+    Height="300"
+    MinWidth="600"
+    MinHeight="300"
+    Closed="OnWindowClosed" 
+    WindowStartupLocation="CenterOwner"
+    mc:Ignorable="d">
+    <Window.Resources>
+    </Window.Resources>
+    <Grid >
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock  Text="{Binding Category, StringFormat=Estimated size of {0} in bytes:}"/>
+            <TextBlock  Text="{Binding Bytes, StringFormat={}{0} bytes}"/>
+        </StackPanel>
+    </Grid>
+</Window>
