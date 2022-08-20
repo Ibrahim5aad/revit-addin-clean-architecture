@@ -1,8 +1,9 @@
 
 ## Messenger
 
-The messenger class is a simple implementation of the famous notification pattern where you establish a 
-communication framework between objects without them being coupled or without them knowing about each other.
+The messenger class is a simple implementation of the famous pattern where you establish a 
+decoubled notificaion or communication system between objects.
+
 This is being addressed through a subscriber/publisher notifications system in which any object of a certain
 class can publish a notification of a certain type and this notification will be forwarded to other subscriber
 objects through the messenger which reduces coupling between parts of the software. The messenger maintains the 
