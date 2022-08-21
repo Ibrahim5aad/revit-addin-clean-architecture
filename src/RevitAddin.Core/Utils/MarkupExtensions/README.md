@@ -1,6 +1,5 @@
 ﻿
-*** MethodBindingExtension, EventArgsExtension,  
-`    `EventSenderExtension***
+*** MethodBindingExtension, EventArgsExtension, EventSenderExtension***
 
 The spirit behind those markup extensions is to be able to reach a higher degree of separation and modularity between the View and the ViewModel. Before addressing the idea behind those markup extensions, let us clarify a little bit how the XAML parser work. When you set an attribute value in a XAML file, the initial type of that value is a pure string text. Even other primitive types such as Int, [Double](https://docs.microsoft.com/en-us/dotnet/api/system.double) are initially parsed as strings and passed to a XAML processor. In order to resolve this string text value, the processor needs to know about the type of the property that is being set; for primitive types a direct conversion is being applied by the XAML parser and if it is an enumeration type (i.e. HorizontalAlignment and VerticalAlignment properties) the string is used to check for an enumeration member with the same name. 
 
