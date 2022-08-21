@@ -27,13 +27,13 @@ So, getting back to the problem we have here; how can you bind a method that is 
 The method binding extension can be used like this: 
 
 ```
-**xmlns:markup**="clr-namespace:MarkupExtensions"
+xmlns:markup="clr-namespace:MarkupExtensions"
 ```
 ```
 <ComboBox 
-   Template="{DynamicResource ComboBoxControlTemplate}"
-   ItemContainerStyle="{DynamicResource ItemStyle}" 
-   SelectionChanged="{markup:MethodBinding SomethingChanged,{markup:EventArgs}}" 
+   **Template**="{DynamicResource ComboBoxControlTemplate}"
+   **ItemContainerStyle**="{DynamicResource ItemStyle}" 
+` `**SelectionChanged**="{markup:MethodBinding SomethingChanged,{markup:EventArgs}}" 
 /ComboBox>
 ```
 
