@@ -12,7 +12,7 @@ Publisher/Subscriber communication pattern object.
 
 ### IoC Container: 
 Inversion of Control container that is also known as DI Container 
-is a framework for implementing automatic dependency injection.
+is a framework for implementing dependency injection.
 
 ### ViewModelBase: 
 INotifyPropertyChanged and INotifyDataErrorInfo Implementation.
