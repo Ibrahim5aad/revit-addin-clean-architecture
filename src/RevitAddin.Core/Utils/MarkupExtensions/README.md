@@ -28,11 +28,12 @@ The method binding extension can be used like this:
 
 ```
 **xmlns:markup**="clr-namespace:MarkupExtensions"
-
+```
+```
 <ComboBox 
-   **Template**="{DynamicResource ComboBoxControlTemplate}"
-   **ItemContainerStyle**="{DynamicResource ItemStyle}" 
-` `**SelectionChanged**="{markup:MethodBinding SomethingChanged,{markup:EventArgs}}" 
+   Template="{DynamicResource ComboBoxControlTemplate}"
+   ItemContainerStyle="{DynamicResource ItemStyle}" 
+   SelectionChanged="{markup:MethodBinding SomethingChanged,{markup:EventArgs}}" 
 /ComboBox>
 ```
 
